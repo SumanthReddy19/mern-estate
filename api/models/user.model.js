@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema({
     password:{
         type:String,
         required:true
-    }
+    },
+    avatar:{
+        type:String,
+        default:"https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/d4/d4044d2e1524b2cea8c519c3bdae89c5cc25f919.jpg"
+    },
 },
 {timestamps:true}
 )
